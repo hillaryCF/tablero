@@ -1,0 +1,21 @@
+$color:black;
+
+div{
+    display: block;
+    float: left;
+}
+.ajedrez{
+    div:nth-child(odd) div:nth-child(odd){
+        background-color: $color;
+    }
+    div:nth-child(odd) div:nth-child(even){
+        background-color: white;
+    }
+    div:nth-child(even) div:nth-child(even){
+        background-color: $color;
+    }
+    div div{
+        width: 140px;
+        height: 100px;
+    }
+}
